@@ -29,7 +29,8 @@ from the theory describing behaviors in the real world
 
 <br>
 
-#References
+<h3>References</h3>
+
 <hr>
 
 **Fudenberg, Drew, and Liang, Annie; 2020.**
