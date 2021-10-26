@@ -27,7 +27,7 @@ due to the theory’s ability to fit any possible data, or whether the good fit 
 from the theory describing behaviors in the real world
 </blockquote>
 
-####References
+##References
 <hr>
 
 **Fudenberg, Drew, and Liang, Annie; 2020.**
