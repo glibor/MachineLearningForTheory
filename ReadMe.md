@@ -5,16 +5,6 @@ This program is a Python implementation of theory and (some of the) applications
 ***Machine Learning for Evaluating and Improving Theories*** by Fudenberg and Liang, 
 available [here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjc26DB_ejzAhVMD7kGHVqBBusQFnoECAQQAQ&url=http%3A%2F%2Feconomics.mit.edu%2Ffiles%2F20096&usg=AOvVaw3Sc37KhDvWemNypZNix9G8).
 
-
-The files include the database from [Bruhnin et al, 2010](https://www.econometricsociety.org/publications/econometrica/2010/07/01/risk-and-rationality-uncovering-heterogeneity-probability)
-and the main script. Essentially the intent is to replicate the following table:
-
-![Paper table](/assets/images/paper_results.PNG "Paper results. Source:Fudenberg and Liang, 2020")
-
-The models are trained in the following way: the data is divided in ten parts and 
-the parameter estimation is conducted using a _least squares estimator_ in nine of them. The remaining data
-is used as out-of-sample test.
-
 The  original paper's main message is summarized in its conclusion:
 
 <blockquote>
@@ -27,7 +17,19 @@ due to the theory’s ability to fit any possible data, or whether the good fit 
 from the theory describing behaviors in the real world
 </blockquote>
 
-####References
+The files include the database from [Bruhnin et al, 2010](https://www.econometricsociety.org/publications/econometrica/2010/07/01/risk-and-rationality-uncovering-heterogeneity-probability)
+and the main script. Essentially the intent is to replicate the following table:
+
+![Paper table](/assets/images/paper_results.PNG "Paper results. Source:Fudenberg and Liang, 2020")
+
+The models are trained in the following way: the data is divided in ten parts and 
+the parameter estimation is conducted using a _least squares estimator_ in nine of them. The remaining data
+is used as out-of-sample test.
+
+Running `main.py` estimates the certain equivalent models and print the results, as they were displayes in the paper.
+
+<h3> References </h3>
+
 <hr>
 
 **Fudenberg, Drew, and Liang, Annie; 2020.**

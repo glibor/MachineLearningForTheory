@@ -1,4 +1,5 @@
 import random
+import sys
 
 import sqlite3
 import numpy as np
@@ -88,6 +89,7 @@ class CertainEquivalentData:
         self.stored_params = {}
 
     def test_expected_utility(self):
+        print("Beggining process...")
         n_elem = len(self.decision) - 1
         if self.reproduce:
             random.seed(0)
@@ -100,7 +102,7 @@ class CertainEquivalentData:
         stored_params = {'expected_param': [],
                          'CPT_params': []}
         for n, i in enumerate(tenfold_div):
-            print(str((n + 1)) + " de 10")
+            print(str((n + 1)) + " of 10")
             index = sum_list([part for part in tenfold_div if part != i])
             train_data = self.decision.iloc[index]
             test_data = self.decision.iloc[i]
@@ -157,7 +159,8 @@ class CertainEquivalentData:
                    'mean_error_ideal': np.mean(stored_errors['errors_ideal'])}
         self.stored_results = results
         self.stored_params = stored_params
-        return results
+
+        #return results
 
     def mean_estimated_params(self):
         """
@@ -203,7 +206,6 @@ class CertainEquivalentData:
         print(bar, 'Estimated coeficients:', bar, sep='\n', end="\n")
 
         print("{:<20} {:<15}".format('Model', 'Coeficients'))
-        print(bar)
         print("{:<20} {:<15}".format('Expected Utility', params[0]))
         print("{:<20} {:<15}".format('CPT (alpha)', params[1]))
 
@@ -239,8 +241,8 @@ class CertainEquivalentData:
 
 
 if __name__ == "__main__":
-    data = CertainEquivalentData('Data/data.sqlite3')
+    data = CertainEquivalentData('Data/data.sqlite3',quick=True)
     erros = data.test_expected_utility()
-    print(erros)
+    sys.stdout.flush()
     data.print_results_completeness()
     data.print_results_params()
