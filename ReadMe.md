@@ -17,6 +17,7 @@ due to the theory’s ability to fit any possible data, or whether the good fit 
 from the theory describing behaviors in the real world
 </blockquote>
 
+<<<<<<< HEAD
 The files include the database from [Bruhnin et al, 2010](https://www.econometricsociety.org/publications/econometrica/2010/07/01/risk-and-rationality-uncovering-heterogeneity-probability)
 and the main script. Essentially the intent is to replicate the following table:
 
@@ -29,6 +30,11 @@ is used as out-of-sample test.
 Running `main.py` estimates the certain equivalent models and print the results, as they were displayes in the paper.
 
 <h3> References </h3>
+=======
+<br>
+
+<h3>References</h3>
+>>>>>>> 3725bb00cf63a3276268a6fb02df3a701c5bddcc
 
 <hr>
 

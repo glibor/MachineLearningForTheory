@@ -242,7 +242,7 @@ class CertainEquivalentData:
 
 if __name__ == "__main__":
     data = CertainEquivalentData('Data/data.sqlite3',quick=True)
-    erros = data.test_expected_utility()
+
     sys.stdout.flush()
     data.print_results_completeness()
     data.print_results_params()
