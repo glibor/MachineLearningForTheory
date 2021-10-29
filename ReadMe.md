@@ -27,7 +27,7 @@ The models are trained in the following way: the data is divided in ten parts an
 the parameter estimation is conducted using a _least squares estimator_ in nine of them. The remaining data
 is used as out-of-sample test.
 
-Running `main.py` estimates the certain equivalent models and print the results, as they were displayes in the paper.
+Running `main.py` estimates the certain equivalent models and print the results, as they were displayed in the paper.
 
 <h3> References </h3>
 
