@@ -3,7 +3,7 @@
 
 This program is a Python implementation of theory and (some of the) applications developed in the paper
 ***Machine Learning for Evaluating and Improving Theories*** by Fudenberg and Liang, 
-available [here](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjc26DB_ejzAhVMD7kGHVqBBusQFnoECAQQAQ&url=http%3A%2F%2Feconomics.mit.edu%2Ffiles%2F20096&usg=AOvVaw3Sc37KhDvWemNypZNix9G8).
+available [here](https://economics.mit.edu/sites/default/files/2022-08/Machine%20Learning%20for%20Evaluating.pdf).
 
 The  original paper's main message is summarized in its conclusion:
 
